@@ -6,6 +6,9 @@ from .models import TaskManager, Prefijo
 from .serializer import TaskManagerSerializer, PrefijoSerializer
 
 class TaskManagerViewsets(viewsets.ModelViewSet):
+    """
+        este es un comentario para el master
+    """
     queryset = TaskManager.objects.all()#.order_by('id').reverse()[:1]
     serializer_class = TaskManagerSerializer 
 
